@@ -8,7 +8,7 @@ class ElementsPage(BasePage):
 
     self.text.please = WebElement(driver,'# app > div > div > div.row > div.col-12.mt-4.col-md-6')
     self.text.elements = WebElement(driver, 'div.playground-header >div')
-    self.icon.elements = WebElement(driver,
+    self.icon = WebElement(driver, 'hesder > a > img')
     self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1) > span > div')
-    self.btn_sidebar_first_text = WebElement(driver,''
-    self.btn_sidebar_first_check_box = WebElement(driver,'')
+    self.btn_sidebar_first_textbox = WebElement(driver,'div :nth-child(1) > div >ul > #item-0 > span')
+    self.btn_sidebar_first_check_box = WebElement(driver,'div :nth-child(1) > div >ul > #item-1 > span')
