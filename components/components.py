@@ -5,10 +5,10 @@ class WebElement:
         self.loc = loc
     def click (self):
         self.find_element().click()
-    def find_element(self, loc):
+    def find_element(self):
         return self.find_element(By.CSS_SELECTOR, self.loc)
     def get_text (self):
-        return str(self.find_element().text()
+        return str(self.find_element().text)
 
     def visible (self):
         return self.find_element().is_displayed()
