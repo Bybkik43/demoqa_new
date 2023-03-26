@@ -1,6 +1,6 @@
 from pages.accordion import Accordion
 import time
-def test_visible_accordion(browser)
+def test_visible_accordion(browser):
     accordion_page = Accordion(browser)
 
     accordion_page.visit()
@@ -9,7 +9,7 @@ def test_visible_accordion(browser)
     time.sleep(2)
     assert accordion_page.section1.exist()
 
-def test_visible_accordion_default (browser)
+def test_visible_accordion_default (browser):
     accordion_page = Accordion(browser)
 
     accordion_page.visit()
