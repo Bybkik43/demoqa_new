@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from components to components WebElement
+from components.components import WebElement
 class Accordion(BasePage):
 
     def __init__(self, driver):
@@ -9,5 +9,5 @@ class Accordion(BasePage):
 
         self.section1 = WebElement(driver, '#section1Content > p')
         self.section2_p_1 = WebElement(driver, '#section2Content > p: nth-child(1)')
-        self.section2_p_2 = WabElement(driver, '#section2Content > p: nth-child(2)')
+        self.section2_p_2 = WebElement(driver, '#section2Content > p: nth-child(2)')
         self.section3 = WebElement(driver, '#section3Content > p')
