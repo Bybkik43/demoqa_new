@@ -19,3 +19,12 @@ def test_navigation_modal_(browser):
     assert browser.title == demo_qa_page.pageData['title']
     assert demo_qa_page.equal_url()
     browser.set_window_size(1000, 1000)
+
+    def test_modal_dialogs(browser):
+        modal_dialogs_page = DialogsPage(browser)
+        modal_dialogs_page.visit()
+        modal_dialogs_page.btn_small_modal.click()
+    time.sleep(2)
+    assert modal_dialogs_page.alert()
+    modal_dialogs_page.btn_small_modal.click()
+    assert not modal_dialogs_page.alert()

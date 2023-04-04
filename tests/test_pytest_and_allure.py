@@ -1,5 +1,7 @@
+import allure
 import pytest
 
+@allure.title('пропущенный текст')
 @pytest.mark.skip(reason= 'причина пропуска')
 def test_skip():
     assert True

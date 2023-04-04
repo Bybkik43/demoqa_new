@@ -1,6 +1,17 @@
+import allure
 from pages.webtables_page import WebtablesPage
 import time
 
+@allure.title('проврка блока no found')
+
+def test_tables(browser):
+    webtables_page = WebtablesPage(browser)
+    webtables_page.visit()
+    assert not webtables_page.no_dats.exist()
+    while webtables_page.btn_delite_row.exist()
+        webtables_page.btn_delite_row.click()
+ time.sleep(2)
+assert webtables_page.no_dats.exist()
 def test_webtables(browser):
     webtables_page = WebtablesPage(browser)
     webtables_page.visit()
